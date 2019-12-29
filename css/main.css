@@ -4,11 +4,13 @@
   --comp-color: #ff6584;
   --gradient: linear-gradient(#6a5fdd 0%, #241d8c 100%);
 }
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .bg-color {
   background: var(--bg-color);
 }
@@ -65,7 +67,7 @@ body {
   margin-bottom: 30px;
 }
 
-.heading + p {
+.heading+p {
   margin-top: -20px;
 }
 
@@ -106,9 +108,11 @@ body {
 .navbar-light .navbar-nav .nav-link {
   color: #fff;
 }
+
 .bg-transparent .navbar-nav .nav-link:hover {
   color: var(--comp-color) !important;
 }
+
 .btn-comp {
   background: var(--comp-color);
   color: #fff;
@@ -295,29 +299,35 @@ body {
 }
 
 .arrow:hover {
-  transform: translateX(-15px);
+  transform: translateX(-5px);
 }
+
 .footer-list {
   padding: 0;
   list-style: none;
   padding-right: 50px;
 }
+
 .footer-list li {
   font-weight: 300;
   opacity: 0.9;
   padding: 8px 0;
   font-size: 15px;
 }
+
 .footer-list li a {
   color: #fff;
   text-decoration: none;
 }
+
 .footer-list li a:hover {
   color: var(--comp-color);
 }
+
 .footer-list h5 {
   font-size: 20px;
 }
+
 .copywrite {
   margin-bottom: -30px;
   text-align: center;
@@ -327,15 +337,18 @@ body {
   font-weight: 300;
   margin-top: 15px;
 }
+
 footer {
   position: relative;
 }
+
 .footer-arts {
   position: absolute;
   right: 0;
   top: -70px;
   width: 500px;
 }
+
 /* multi step */
 .multi-menu {
   list-style: none;
@@ -348,37 +361,56 @@ footer {
   width: 150px;
   display: none;
 }
-li.open > .multi-menu {
+
+li.open>.multi-menu {
   display: block;
 }
 
 .nav-item {
   position: relative;
 }
+
 .multi-wrap {
   position: relative;
 }
+
 .multi-wrap .multi-menu {
   top: 0;
   left: 100%;
 }
+
 .multi-menu li {
   padding: 5px 10px;
 }
+
 .multi-menu li a {
   color: #333;
   text-decoration: none;
 }
 
-.navbar-nav li:hover > .multi-menu {
+.navbar-nav li:hover>.multi-menu {
   display: block;
 }
+
 /* .navbar-nav .multi-menu {
   display: block;
 } */
-.multi-wrap > a:after {
-    content: "+";
-    font-size: 18px;
-    position: absolute;
-    right: 10px;
+.multi-wrap>a:after {
+  content: "+";
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-brand {
+  color: #fff !important;
 }
