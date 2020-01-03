@@ -16,6 +16,7 @@ var swiper = new Swiper('.swiper-container.swiper-testimonial', {
         },
     }
 });
+
 var swiper = new Swiper('.swiper-container.swiper-work', {
     slidesPerView: 2,
     spaceBetween: 15,
@@ -38,6 +39,22 @@ var swiper = new Swiper('.swiper-container.swiper-work', {
         },
     }
 });
+
+
+var swiper = new Swiper('.swiper-container.swiper-img-preveiw', {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+});
+
 
 $('.faq-heading').click(function () {
     $(this).parent('li').find('.faq-text').slideToggle();
