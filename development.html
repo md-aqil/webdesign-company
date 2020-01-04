@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<header></header>
+
+<!-- start body -->
+
+<body>
+    <section class="curve-bg">
+        <nav id="nav"></nav>
+        <div class="container spacer">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h2>
+                            Web Development Company in Bangalore
+                        </h2>
+                        <p class="pt-3">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Aperiam ullam qui impedit ea, dignissimos
+                            natus earum vitae tempora magni commodi.
+                        </p>
+                        <button style="width:200px" class="btn btn-comp btn-lg mt-3">
+                            Enquire Now
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-3">
+                    <img class="width100 hero-art" src="img/hero-art.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--our-tools -->
+    <section class="container spacer">
+        <div class="text-center">
+
+            <h3 class="bold text-center heading line-heading">
+                Our Tools
+            </h3>
+        </div>
+        <div class="row text-center logo-image">
+            <div class="col-md-2">
+                <img style="width: 100%;" src="./img/bootstrap-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img style="width: 50%;" src="./img/html-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img style="width: 100%;" src="./img/php-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img style="width: 50%;" src="./img/wordpress-logo.png" alt="" />
+            </div>
+            <div class="col-md-2">
+                <img style="width: 50%;" src="./img/atop-logo.png" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- end our tools -->
+    <!-- our portfolio -->
+    <section class=" container spacer">
+        <div class="text-center">
+
+            <h3 class="text-center heading line-heading">
+                Our Portfolio
+            </h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="sbox">
+                    <img src="img/icons/digital-marketing.png" alt="" />
+                    <h5 class="pt-5">See how your ads are doing.</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero quisquam in magnam aut totam asperiores aspernatur,
+                        explicabo eos magni corporis cumque sunt reprehenderit
+                        nam illum.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sbox">
+                    <img src="img/icons/uiux.png" alt="" />
+                    <h5 class="pt-5">Put your ads to the test</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero quisquam in magnam aut totam asperiores aspernatur,
+                        explicabo eos magni corporis cumque sunt reprehenderit
+                        nam illum.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="sbox">
+                    <img src="img/icons/web.png" alt="" />
+                    <h5 class="pt-5">Stay in control of your budget</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero quisquam in magnam aut totam asperiores aspernatur,
+                        explicabo eos magni corporis cumque sunt reprehenderit
+                        nam illum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio -->
+    <!-- our work -->
+    <section class="container spacer mb-5">
+        <div class="text-center">
+            <h3 class="text-center heading line-heading mb-5">
+                Our Work
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/add-img/banner-add.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ATI technologies</h5>
+                        <a href="#" class="btn btn-link">view project ....</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/add-img/banner-add.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ATI technologies</h5>
+                        <a href="#" class="btn btn-link">view project ....</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/add-img/banner-add.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ATI technologies</h5>
+                        <a href="#" class="btn btn-link">view project ....</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img class="card-img-top" src="./img/add-img/banner-add.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ATI technologies</h5>
+                        <a href="#" class="btn btn-link">view project ....</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- our work -->
+
+    <!-- body END-->
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+    <footer></footer>
+</body>
