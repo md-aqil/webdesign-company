@@ -597,3 +597,11 @@ li.open>.multi-menu {
     color: #333;
     text-decoration: none;
 }
+
+.shadow-depth {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22), -16px 16px 0px var(--theme-color);
+}
+
+.shadow-depth.right {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22), 16px -16px 0px var(--theme-color);
+}
