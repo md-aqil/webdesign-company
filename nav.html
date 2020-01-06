@@ -2,15 +2,8 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-3">
     <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -19,70 +12,58 @@
                     <a class="nav-link" href="produt.html">Products</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="">Website Content + </a>
-                    <ul class="multi-menu">
-                        <li>
-                            <a href="websiteContent.html">Website Content</a>
-                        </li>
-                        <li><a href="marketing.html">Marketing Design</a></li>
-                    </ul>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="">Website Content</a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="websiteContent.html" class="dropdown-item">Website Content</a>
+                        <a href="marketing.html" class="dropdown-item">Marketing Design</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="">Digital</a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="SEM.html" class="dropdown-item">Search Engine Marketing (SEM)</a>
+                        <a href="SMM.html" class="dropdown-item">Social Media Marketing (SMM)</a>
+                        <a href="SEO.html" class="dropdown-item">Search Engine optimization (SEO)</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="">Enterprise</a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="SEM.html" class="dropdown-item">SEO For Enterprise</a>
+                        <a href="SMM.html" class="dropdown-item">Email Marketing</a>
+                    </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Digital + </a>
-                    <ul class="multi-menu">
-                        <li>
-                            <a href="SEO.html"
-                                >Search Engine optimization (SEO)</a
-                            >
-                        </li>
-                        <li>
-                            <a href="SMM.html">Social Media Marketing (SMM)</a>
-                        </li>
-                        <li>
-                            <a href="SEM.html">Search Engine Marketing (SEM)</a>
-                        </li>
-                    </ul>
+                    <a class="nav-link" href="ui-ux.html">UI/UX</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Enterprise + </a>
-                    <ul class="multi-menu">
-                        <li>
-                            <a href="enterprice-ceo.html">SEO For Enterprise</a>
-                        </li>
-                        <li>
-                            <a href="emailMarketin.html">Email Marketing</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">UI/UX</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Development + </a>
-                    <ul class="multi-menu">
-                        <li>
-                            <a href="development.html">Website Development</a>
-                        </li>
-                        <li>
-                            <a href="emailMarketin.html">Email Marketing</a>
-                        </li>
-                    </ul>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" href="">Development</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="SEM.html" class="dropdown-item">Website Development</a>
+                        <a href="SMM.html" class="dropdown-item">Email Marketing</a>
+                    </div>
                 </li>
                 <li>
-                    <a class="nav-link" href="#">Blog</a>
+                    <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        href="#">Blog</a>
+
                 </li>
                 <li>
                     <a class="nav-link" href="#">Contac Us</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button
-                    class="btn btn-outline-light my-2 my-sm-0"
-                    type="submit"
-                >
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
                     Login
                 </button>
             </form>
