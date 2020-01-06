@@ -32,74 +32,7 @@
 
 <body>
     <section class="hero-banner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent pt-3">
-            <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="produt.html">Products</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Website Content +
-                            </a>
-                            <ul class="multi-menu">
-                                <li> <a href="websiteContent.html">Website Content</a></li>
-                                <li> <a href="">Marketing Design</a></li>
-                                <li><a href="">Video production</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Digital +
-                            </a>
-                            <ul class="multi-menu">
-                                <li> <a href="">Search Engine optimization (SEO)</a></li>
-                                <li> <a href="">Social Media Marketing (SMM)</a></li>
-                                <li><a href="">Search Engine Marketing (SEM)</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Enterprise +
-                            </a>
-                            <ul class="multi-menu">
-                                <li> <a href="">SEO For Enterprise</a></li>
-                                <li> <a href="">Email Marketing</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">UI/UX</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Development +
-                            </a>
-                            <ul class="multi-menu">
-                                <li> <a href="">Website Development</a></li>
-                                <li> <a href="">Email Marketing</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Contac Us</a>
-                        </li>
-
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Login</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
+        <nav id="nav"></nav>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -675,62 +608,6 @@
     </div>
 
     <footer class="spacer footer">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h5>Digital Marketing Service</h5>
-                    <ul class="footer-list">
-                        <li><a href="">SEO Company Bangalore</a></li>
-                        <li><a href="">Social Media Marketing Bangalore</a></li>
-                        <li><a href="">Pay Per Click Services in Banglore</a></li>
-                        <li><a href="">Email Marketing Services in Bangalore</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>UI/UX Design Service</h5>
-                    <ul class="footer-list">
-                        <li><a href="">App UI/UX Design</a></li>
-                        <li><a href="">Web UI/UX Design</a></li>
-                        <li><a href="">UI Design Company Banglore</a></li>
-                        <h5>Web Development</h5>
-                        <li><a href="">Website Development Services
-                                Banglore
-                            </a></li>
-                        <li><a href="">
-                                Mobile Application Development
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h5>Contact Us</h5>
-                    <ul class="footer-list">
-                        <li>
-                            No 5, 3rd Floor 1st Cross.
-                            Krishna Reddy Colony Domlur Layout
-                            Banglore,
-                            Karnataka - 560071
-                        </li>
-                        <li><a href="tell:+918553131176">+918553131176</a></li>
-                        <li><a href="">info@Email.com</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-
-                    <h5>Pages</h5>
-                    <ul class="footer-list">
-                        <li><a href="">Support</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Terms & Condition</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <p class="copywrite">
-            Copyright © 2010-2019 Pro.skill
-        </p>
-        <img class="footer-arts" src="img/footer-arts.svg" alt="">
 
     </footer>
 
@@ -751,7 +628,31 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controller.js"></script>
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
 
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
 
 </body>
 
