@@ -55,6 +55,51 @@ var swiper = new Swiper('.swiper-container.swiper-img-preveiw', {
 
 });
 
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+    // effect: 'fade',
+    spaceBetween: 0,
+    slidesPerView: 1,
+    grabCursor: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbs
+    }
+});
+
+// swiper2 ==============END
+
+
+var galleryThumbs2 = new Swiper('.gallery-thumbs2', {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var galleryTop2 = new Swiper('.gallery-top2', {
+    // effect: 'fade',
+    spaceBetween: 0,
+    slidesPerView: 1,
+    grabCursor: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbs2
+    }
+});
+
 
 $('.faq-heading').click(function () {
     $(this).parent('li').find('.faq-text').slideToggle();

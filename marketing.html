@@ -14,7 +14,8 @@
                         <h1 class="text-uppercase">
                             grow your business with better marketing Design
                         </h1>
-                        <button style="width:200px" class="btn btn-comp btn-lg mt-3">Know More</button>
+                        <button style="width:200px" class="btn btn-comp btn-lg mt-3" data-toggle="modal"
+                            data-target="#get-quotes-modal">Know More</button>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -26,56 +27,6 @@
 
     </section>
 
-    <!-- marketin model -->
-    <section class="model-section">
-        <div class="modal fade" id="marketing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div>
-                            <form>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter your Name">
-                                </div>
-
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter your Email">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter your Contact No.">
-                                </div>
-
-                                <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option>Search Engine optimization (SEO)</option>
-                                        <option>Social Media Marketing (SMM)</option>
-                                        <option>Search Engine Marketing (SEM)</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <textarea class="form-control" name="" id="" rows="2"
-                                        placeholder="Message"></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-comp">submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- marketin model -->
 
     <!-- GET BEST MARKETING ASSET -->
     <section class="container spacer">
@@ -83,7 +34,8 @@
             <h1 class="heading theme-color text-uppercase">
                 get the best marketin assets
             </h1>
-            <button style="width:200px" class="btn btn-comp">GET QUOTE</button>
+            <button style="width:200px" class="btn btn-comp" data-toggle="modal" data-target="#get-quotes-modal">GET
+                QUOTE</button>
         </div>
         <div class="marketing-asset">
             <div class="row spacer align-items-center">
@@ -169,7 +121,56 @@
         </div>
     </section>
 
+    <!-- Button trigger modal -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="get-quotes-modal" tabindex="-1" role="dialog" aria-labelledby="get-quotes-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="get-quotes-modalLabel">Get Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Contact No.">
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>Search Engine optimization (SEO)</option>
+                                <option>Social Media Marketing (SMM)</option>
+                                <option>Search Engine Marketing (SEM)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" rows="2" placeholder="Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-comp">submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- END GET BEST MARKETING ASSET -->
 

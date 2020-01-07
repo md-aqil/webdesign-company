@@ -36,13 +36,10 @@
     margin-top: -5%;
 }
 
-.image-box > img {
+.image-box>img {
     margin-left: 15rem;
 }
 
-.product-logo-container {
-    padding-top: 5rem;
-}
 
 .blog-para {
     line-height: 5em;
@@ -59,13 +56,13 @@
     padding: 2rem;
 }
 
-.text-wrapper > h1 {
+.text-wrapper>h1 {
     margin-top: 2rem;
     line-height: 1.3em;
     margin-bottom: 3rem;
 }
 
-.text-wrapper > p {
+.text-wrapper>p {
     line-height: 2em;
     margin-bottom: 3rem;
 }
@@ -74,7 +71,7 @@
     border-radius: 4px;
 }
 
-.sbox p > .content-span {
+.sbox p>.content-span {
     color: #000;
     position: relative;
 }
@@ -234,6 +231,7 @@
 .logo-image div {
     margin-left: 2rem;
 }
+
 /* END MARKETING PAGE STYLE */
 
 /* delevelopment */
@@ -243,6 +241,7 @@
     background: #fff;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
 }
+
 .padding {
     padding-top: 1rem;
     padding-left: 1rem;

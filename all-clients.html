@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<header></header>
+
+<body>
+    <nav id="nav" class="navbar-theme"></nav>
+    <div class="spacer container">
+        <center class="mb-5">
+            <h1 class="heading">Clients</h1>
+            <p class="lead">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+        </center>
+
+        <div class="row">
+            <div class="col-md-12">
+                <img class="width100" src="img/client.png" alt="">
+            </div>
+            <div class="col-md-12 mt-4">
+                <img class="width100" src="img/client.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+    <footer></footer>
+</body>
+
+</html>
