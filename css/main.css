@@ -86,7 +86,7 @@ body {
   margin-bottom: 30px;
 }
 
-.heading + p {
+.heading+p {
   margin-top: -20px;
 }
 
@@ -395,7 +395,7 @@ footer {
   box-shadow: 0px 7px 8px #00000026;
 }
 
-li.open > .multi-menu {
+li.open>.multi-menu {
   display: block;
 }
 
@@ -423,14 +423,14 @@ li.open > .multi-menu {
   display: block;
 }
 
-.navbar-nav li:hover > .multi-menu {
+.navbar-nav li:hover>.multi-menu {
   display: block;
 }
 
 /* .navbar-nav .multi-menu {
   display: block;
 } */
-.multi-wrap > a:after {
+.multi-wrap>a:after {
   content: "+";
   font-size: 18px;
   position: absolute;
@@ -464,11 +464,11 @@ li.open > .multi-menu {
   background: var(--theme-color);
 }
 
-.navbar.bg-theme .collapse > ul > li > a {
+.navbar.bg-theme .collapse>ul>li>a {
   color: #fff !important;
 }
 
-.navbar.navlink-white .collapse > ul > li > a {
+.navbar.navlink-white .collapse>ul>li>a {
   color: #fff !important;
 }
 
@@ -605,8 +605,13 @@ li.open > .multi-menu {
     16px -16px 0px var(--theme-color);
 }
 
-.modal-body {
-  padding: 50px;
+.modal-header {
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.modal-content {
+  padding: 15px 50px;
 }
 
 .work-overlay a {
@@ -730,6 +735,7 @@ nav .dropdown-menu .dropdown-item:hover {
   border-radius: 50%;
   margin-left: 6px;
 }
+
 .add-girl-art {
   position: relative;
 }
@@ -747,28 +753,34 @@ nav .dropdown-menu .dropdown-item:hover {
   bottom: 0;
   background-position: right bottom;
 }
+
 .add-girl-art .cta-form {
   width: 90%;
   position: relative;
 }
+
 .contact-list {
   list-style: none;
   padding: 0;
 }
+
 .contact-list li {
   color: #fff;
   padding: 7px 0;
   font-size: 20px;
   font-weight: 300;
 }
+
 .contact-list li a {
   color: #fff;
 }
+
 .social-icon-list {
   list-style: none;
   padding: 0;
   display: flex;
 }
+
 .social-icon-list li a {
   display: block;
   --size: 40px;
@@ -780,20 +792,60 @@ nav .dropdown-menu .dropdown-item:hover {
   border-radius: 3px;
   box-shadow: 0 0 7px #00000052;
 }
+
 .social-icon-list li:first-child a {
   margin-left: 0;
 }
+
 .social-icon-list li a img {
   width: 100%;
   height: 100%;
 }
+
 .google-map {
   width: 100%;
   height: 400px;
 }
+
 .gmap-list li {
   font-size: 20px;
 }
+
 .gmap-list li a {
   color: #000;
+}
+
+.i-circle>img {
+  --size: 60px;
+  background: var(--theme-color);
+  width: var(--size);
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.i-list {
+  padding-left: 20px;
+  list-style: square;
+}
+
+.i-list li {
+  color: #7c7c7c;
+}
+
+.i-circle-row {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.m-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.list-unstyled {
+  list-style: none !important;
 }
