@@ -16,6 +16,34 @@ var swiper = new Swiper('.swiper-container.swiper-testimonial', {
         },
     }
 });
+var swiper = new Swiper('.swiper-container.swiper-works', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
+var swiper = new Swiper('.swiper-container.swiper-testimonial-product', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+
+    navigation: {
+        nextEl: '.swiper-button-next-test',
+        prevEl: '.swiper-button-prev-test',
+    },
+
+    breakpoints: {
+        640: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3,
+            width: 1000,
+            spaceBetween: 100,
+        },
+    }
+});
 
 var swiper = new Swiper('.swiper-container.swiper-work', {
     slidesPerView: 2,

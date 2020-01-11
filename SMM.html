@@ -149,24 +149,28 @@
                         <div style="padding: 1.5rem;">
                             <p class="read">How Quality Organic traffic surged by <span class="theme-color"> 1164%
                                 </span>for a leading interior Design company in Bangalore</p>
-                            <button style="font-size: 14px;" class="text-uppercase btn btn-comp">request access</button>
+                            <button class="text-uppercase btn btn-comp" data-toggle="modal"
+                                data-target="#request-access">request access</button>
                         </div>
                         <div style="padding: 1.5rem;">
                             <p class="read">How Quality Organic traffic surged by <span class="theme-color"> 1164%
                                 </span>for a leading interior Design company in Bangalore</p>
-                            <button style="font-size: 14px;" class="text-uppercase btn btn-comp">request access</button>
+                            <button class="text-uppercase btn btn-comp" data-toggle="modal"
+                                data-target="#request-access">request access</button>
                         </div>
                     </div>
                     <div class="d-flex flex-row">
                         <div style="padding: 1.5rem;">
                             <p class="read">How Quality Organic traffic surged by <span class="theme-color"> 1164%
                                 </span>for a leading interior Design company in Bangalore</p>
-                            <button style="font-size: 14px;" class="text-uppercase btn btn-comp">request access</button>
+                            <button class="text-uppercase btn btn-comp" data-toggle="modal"
+                                data-target="#request-access">request access</button>
                         </div>
                         <div style="padding: 1.5rem;">
                             <p class="read">How Quality Organic traffic surged by <span class="theme-color"> 1164%
                                 </span>for a leading interior Design company in Bangalore</p>
-                            <button style="font-size: 14px;" class="text-uppercase btn btn-comp">request access</button>
+                            <button class="text-uppercase btn btn-comp" data-toggle="modal"
+                                data-target="#request-access">request access</button>
                         </div>
                     </div>
                 </div>
@@ -321,7 +325,7 @@
                 <div class="sbox get-start bg-gradient text-center">
                     <img src="./img/icons/web.png" alt="">
                     <h4>Get started with us</h4>
-                    <button class="btn btn-comp" style=" font-size: 12px;">ENOUFH</button>
+                    <button class="btn btn-comp" data-toggle="modal" data-target="#getQuote">Get Quote</button>
                 </div>
             </div>
             <div class="col-md-4">
@@ -459,10 +463,91 @@
             </div>
         </div>
     </section>
-    <!-- END FAQ'S ON SEO -->
-    <!-- body END-->
+    <!-- Modal -->
+    <div class="modal fade" id="request-access" tabindex="-1" role="dialog" aria-labelledby="request-accessLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="request-accessLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="">Enter your email</label>
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="getQuote" tabindex="-1" role="dialog" aria-labelledby="getQuoteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="getQuoteLabel">Get Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <center>
+                        <h2 class="bold">Get Quote</h2>
+                        <h5>We are a Design and Digital Marketing Agency in India</h5>
+                        <p class="read theme-color">
+                            Providing design, development and digital solutions for over 400+ clients across the globe.
+                        </p>
+                    </center>
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                        </div>
 
 
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Mobile Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="" id="">
+                                <option value="">Select A Service</option>
+                                <option value="">SEO</option>
+                                <option value="">SMM</option>
+                                <option value="">SEM</option>
+                                <option value="">Marketing Design</option>
+                                <option value="">Content Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" rows="4" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-comp btn-lg">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="./js/jQuery.min.js"></script>
     <script src="./js/splitting.js"></script>
     <script src="./js/scroll-out.min.js"></script>

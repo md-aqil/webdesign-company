@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .review-box .quote {
+        right: -50px !important;
+    }
+</style>
+<header></header>
+
+<body>
+
+    <!-- body -->
+
+    <section class="bg-curve">
+        <nav id="nav"></nav>
+        <div class="container spacer">
+            <div class="product-page">
+                <div class="row" style="align-items: center;">
+                    <div class="col-md-6 pr-5">
+                        <h1 class="heading text-white">Cold outreach automation platform</h1>
+                        <h5 class="lead text-white">Lorem ipsum dolor sit amet consectetur adipis elit.
+                            In a error,
+                            icing? consectetur adipis elit</h5>
+                        <div class="product-button">
+                            <button class="btn btn-light btn-lg">Get Email Finder for crome</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-box video-wrapper">
+                            <iframe class="video" src="https://www.youtube.com/embed/OWhiCkEY-Yk" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/splitting.js"></script>
+    <script src="./js/scroll-out.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/controller.js"></script>
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
+
+    <footer></footer>
+
+</body>
+
+</html>
