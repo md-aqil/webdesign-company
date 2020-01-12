@@ -935,3 +935,7 @@ nav .dropdown-menu .dropdown-item:hover {
 .input-form-box .input-group .btn {
   border-radius: 3px !important;
 }
+
+.swiper-review-product-page {
+  padding-bottom: 50px;
+}

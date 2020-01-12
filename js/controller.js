@@ -28,6 +28,15 @@ var swiper = new Swiper('.swiper-container.swiper-works', {
 });
 
 
+var swiper = new Swiper('.swiper-container.swiper-review-product-page', {
+    slidesPerView: 4,
+    spaceBetween: 80,
+    navigation: {
+        nextEl: '.swiper-button-next-test',
+        prevEl: '.swiper-button-prev-test',
+    },
+});
+
 var swiper = new Swiper('.swiper-container.swiper-testimonial-product', {
     slidesPerView: 1,
     spaceBetween: 30,
