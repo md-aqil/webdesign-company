@@ -912,3 +912,26 @@ nav .dropdown-menu .dropdown-item:hover {
   box-shadow: 1px 5px 41px 0 rgba(228, 228, 228, .8);
   border: 3px solid var(--theme-color);
 }
+
+.input-form-box {
+  width: 50%;
+  margin: auto;
+}
+
+.input-form-box .input-group {
+  height: 60px;
+  /* padding: 10px; */
+  background: white;
+  padding: 5px;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px #00000042;
+}
+
+.input-form-box .input-group .form-control {
+  height: 100%;
+  border: none;
+}
+
+.input-form-box .input-group .btn {
+  border-radius: 3px !important;
+}
