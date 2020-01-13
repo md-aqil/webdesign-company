@@ -28,6 +28,32 @@
             </g>
         </symbol>
     </svg>
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
 </head>
 
 <body>
@@ -125,16 +151,22 @@
                                     <input type="text" class="form-control" placeholder="Company Name">
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control" name="" id="">
-                                        <option value="">Purpose</option>
-                                        <option value="" disabled>Why you want to connect with Seo Street?</option>
-                                        <option value="">want support in lead generation</option>
-                                        <option value="">need content for marketing</option>
-                                        <option value="">want to boost your sale</option>
-                                        <option value="">need digital marketing support</option>
-                                        <option value="">want to know about our email marketing package</option>
-                                        <option value="">Others</option>
-                                    </select>
+                                    <div class="multiselect">
+                                        <div class="selectBox" onclick="showCheckboxes()">
+                                            <select class="form-control">
+                                                <option>Purpose</option>
+                                            </select>
+                                            <div class="overSelect"></div>
+                                        </div>
+                                        <div id="checkboxes">
+                                            <label for="one">
+                                                <input type="checkbox" id="one" />First checkbox</label>
+                                            <label for="two">
+                                                <input type="checkbox" id="two" />Second checkbox</label>
+                                            <label for="three">
+                                                <input type="checkbox" id="three" />Third checkbox</label>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
@@ -151,6 +183,9 @@
         </section>
     </section>
 
+    <section class="container spacer">
+        <img class="infgraphic-image-full" src="img/business.jpeg" alt="">
+    </section>
     <section class="spacer container">
         <center>
             <h1 class="heading">
@@ -204,37 +239,110 @@
             </div>
         </div>
     </section>
+
+
+
+    <section class="container">
+
+
+
+
+    </section>
+
     <section class="container spacer">
         <div class="row align-items-center">
             <div class="col-md-6">
+                <div class="swiper-container gallery-top-main-image bg-gradient shadow-2">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
 
-                <div class="bg-gradient shadow-2 p30">
-
-                    <h4 class="text-white mt-4">This is your heading</h4>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit dolor
-                        ratione
-                        eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
-                        dolorum
-                        perferendis laboriosam. perferendis laboriosam.
-                        perferendis laboriosam.
-                    </p>
-                    <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                    </div>
+                    <!-- Add Arrows -->
+                    <!-- <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div> -->
                 </div>
 
             </div>
             <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                <div class="swiper-container gallery-thumbs-list">
 
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <ul class="list-group swiper-wrapper">
+                        <li class="list-group-item swiper-slide">Cras justo odio</li>
+                        <li class="list-group-item swiper-slide">Dapibus ac facilisis in</li>
+                        <li class="list-group-item swiper-slide">Morbi leo risus</li>
+                        <li class="list-group-item swiper-slide">Porta ac consectetur ac</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
 
-                </ul>
+                    </ul>
+
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -253,31 +361,7 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controller.js"></script>
-    <script>
-        fetch("header.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("header").innerHTML = data;
-            });
 
-        fetch("./nav.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("#nav").innerHTML = data;
-            });
-
-        fetch("./footer.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("footer").innerHTML = data;
-            });
-    </script>
 
 </body>
 

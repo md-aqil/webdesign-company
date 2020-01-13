@@ -2,6 +2,76 @@ $(window).on('load', function () {
     $('#page-load-modal').modal('show');
 });
 
+
+// marketin-page javascript =======
+
+var swiper = new Swiper('.swiper-container.mar-1', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiper = new Swiper('.swiper-container.mar-2', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiper = new Swiper('.swiper-container.mar-3', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+var swiper = new Swiper('.swiper-container.mar-4', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+var galleryThumbsList = new Swiper('.gallery-thumbs-list', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var galleryTopMainImage = new Swiper('.gallery-top-main-image', {
+    spaceBetween: 30,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbsList
+    }
+});
+
 var swiper = new Swiper('.swiper-container.swiper-testimonial', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -141,6 +211,20 @@ var galleryTop2 = new Swiper('.gallery-top2', {
     }
 });
 
+// multi-select ==========
+var expanded = false;
+
+function showCheckboxes() {
+    var checkboxes = document.getElementById("checkboxes");
+    if (!expanded) {
+        checkboxes.style.display = "block";
+        expanded = true;
+    } else {
+        checkboxes.style.display = "none";
+        expanded = false;
+    }
+}
+// multi-select END==========
 
 $('.faq-heading').click(function () {
     $(this).parent('li').find('.faq-text').slideToggle();
@@ -315,15 +399,6 @@ var swiper = new Swiper('.swiper-container.swiper-cta', {
 
 
 
-wow2 = new WOW({
-    boxClass: 'wow-reveal', // default
-    animateClass: 'reveal-text', // default
-    offset: 0, // default
-    mobile: true, // default
-    live: true // default
-})
-wow2.init();
-
 
 var words = document.getElementsByClassName('word');
 var wordArray = [];
@@ -405,13 +480,4 @@ var swiper = new Swiper('.swiper-container.slider2', {
         clickable: true,
     },
 
-});
-
-
-
-
-
-new WOW().init();
-$('.auto-animate .wow').each(function (a) {
-    $(this).attr('data-wow-delay', `${(a / 10) * 1.5}s`);
 });
