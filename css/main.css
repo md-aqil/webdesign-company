@@ -89,7 +89,7 @@ body {
   margin-bottom: 30px;
 }
 
-.heading + p {
+.heading+p {
   margin-top: -20px;
 }
 
@@ -399,7 +399,7 @@ footer {
   box-shadow: 0px 7px 8px #00000026;
 }
 
-li.open > .multi-menu {
+li.open>.multi-menu {
   display: block;
 }
 
@@ -427,14 +427,14 @@ li.open > .multi-menu {
   display: block;
 }
 
-.navbar-nav li:hover > .multi-menu {
+.navbar-nav li:hover>.multi-menu {
   display: block;
 }
 
 /* .navbar-nav .multi-menu {
   display: block;
 } */
-.multi-wrap > a:after {
+.multi-wrap>a:after {
   content: "+";
   font-size: 18px;
   position: absolute;
@@ -468,11 +468,11 @@ li.open > .multi-menu {
   background: var(--theme-color);
 }
 
-.navbar.bg-theme .collapse > ul > li > a {
+.navbar.bg-theme .collapse>ul>li>a {
   color: #fff !important;
 }
 
-.navbar.navlink-white .collapse > ul > li > a {
+.navbar.navlink-white .collapse>ul>li>a {
   color: #fff !important;
 }
 
@@ -529,6 +529,14 @@ li.open > .multi-menu {
 .video-box iframe {
   width: 100%;
   height: 100%;
+}
+
+.cta-box {
+  height: 200px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cta-form {
@@ -609,7 +617,7 @@ li.open > .multi-menu {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.nav-pills .show>.nav-link {
   color: #ea6182;
   background-color: transparent;
   font-weight: 700;
@@ -937,11 +945,13 @@ nav .dropdown-menu .dropdown-item:hover {
 .swiper-review-product-page {
   padding-bottom: 80px;
 }
+
 .marketing-page-slider {
   padding-bottom: 50px;
 }
-.marketing-page-slider .swiper-slide {
-}
+
+.marketing-page-slider .swiper-slide {}
+
 .marketing-page-slider .swiper-slide img {
   width: 100%;
   height: 100%;
@@ -952,15 +962,18 @@ nav .dropdown-menu .dropdown-item:hover {
   width: 520px !important;
   height: 480px !important;
 }
+
 .infgraphic-image-full {
   width: 100%;
   height: 400px;
   object-fit: cover;
 }
+
 .gallery-thumbs-list .list-group-item {
   width: 100% !important;
   cursor: pointer;
 }
+
 .gallery-top-main-image {
   padding: 20px;
 }
@@ -969,6 +982,7 @@ nav .dropdown-menu .dropdown-item:hover {
   background: var(--theme-color);
   color: #fff;
 }
+
 /* multi-select-box */
 .selectBox {
   position: relative;
@@ -992,10 +1006,26 @@ nav .dropdown-menu .dropdown-item:hover {
   margin: 0;
   padding: 5px 10px;
 }
+
 #checkboxes label input {
   margin-right: 5px;
 }
 
 #checkboxes label:hover {
   background-color: #f7f7f7;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  display: none;
+}
+
+.checklist>h5 {
+  margin-top: 10px;
+  font-size: 17px
+}
+
+.checklist li {
+  color: #636363;
 }

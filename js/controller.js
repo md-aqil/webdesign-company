@@ -211,6 +211,17 @@ var galleryTop2 = new Swiper('.gallery-top2', {
     }
 });
 
+
+$(document).ready(function () {
+    $(".openCheckbox").change(function () {
+        var value = $(this).children("option:selected").val();
+        $('.checklist').slideDown();
+
+    });
+});
+
+
+
 // multi-select ==========
 var expanded = false;
 
@@ -245,6 +256,9 @@ fetch("./footer.html")
     .then(data => {
         document.querySelector("footer").innerHTML = data;
     });
+
+
+
 
 
 // blog controller here=====================

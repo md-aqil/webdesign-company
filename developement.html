@@ -19,7 +19,8 @@
                             elit. Aperiam ullam qui impedit ea, dignissimos
                             natus earum vitae tempora magni commodi.
                         </p>
-                        <button style="width:200px" class="btn btn-comp btn-lg mt-3">
+                        <button style="width:200px" data-toggle="modal" data-target="#exampleModal"
+                            class="btn btn-comp btn-lg mt-3">
                             Enquire Now
                         </button>
                     </div>
@@ -157,6 +158,77 @@
     <!-- our work -->
 
     <!-- body END-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <center>
+                        <h2 class="bold">Get Quote</h2>
+                        <h5>We are a Design and Digital Marketing Agency in India</h5>
+                        <p class="read theme-color">
+                            Providing design, development and digital solutions for over 400+ clients across the globe.
+                        </p>
+                    </center>
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Mobile Number">
+                        </div>
+                        <div class="form-group">
+
+                            <select class="form-control" name="" id="">
+                                <option value="">Select A Service</option>
+                                <option value="">SEO</option>
+                                <option value="">SMM</option>
+                                <option value="">SEM</option>
+                                <option value="">Marketing Design</option>
+                                <option value="">Content Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" rows="4" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-comp">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jQuery.min.js"></script>
+    <script src="./js/splitting.js"></script>
+    <script src="./js/scroll-out.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/controller.js"></script>
+
     <script>
         fetch("header.html")
             .then(response => {
