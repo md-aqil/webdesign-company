@@ -28,6 +28,32 @@
             </g>
         </symbol>
     </svg>
+
+    <script>
+        fetch("header.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("header").innerHTML = data;
+            });
+
+        fetch("./nav.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("#nav").innerHTML = data;
+            });
+
+        fetch("./footer.html")
+            .then(response => {
+                return response.text();
+            })
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+    </script>
 </head>
 
 <body>
@@ -89,7 +115,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="bg-gradient shadow-2 p30">
-                        <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        <img style="width: 200px; margin:auto" src="img/interior-desighn.jpeg" alt="">
                         <h4 class="text-white mt-4">This is your heading</h4>
                         <p class="text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit dolor
@@ -125,16 +151,46 @@
                                     <input type="text" class="form-control" placeholder="Company Name">
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control" name="" id="">
-                                        <option value="">Purpose</option>
-                                        <option value="" disabled>Why you want to connect with Seo Street?</option>
-                                        <option value="">want support in lead generation</option>
-                                        <option value="">need content for marketing</option>
-                                        <option value="">want to boost your sale</option>
-                                        <option value="">need digital marketing support</option>
-                                        <option value="">want to know about our email marketing package</option>
+                                    <select name="" id="" class="form-control openCheckbox">
+                                        <option value="default">Select</option>
+                                        <option value="">Request For Proposal</option>
+                                        <option value="">want to Collaborate</option>
+                                        <option value="">Digital Marketing</option>
                                         <option value="">Others</option>
                                     </select>
+                                    <ul class="checklist">
+                                        <h5>Why you want to connect with SEO Street?</h5>
+                                        <li>
+                                            <input type="checkbox" id="one"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="one">Want Support in Lead Generation</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="two"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="two">Need content for Marketing</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="three"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="three">want to boost your sale</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="four"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="four">need digital marketing support</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="five"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="five">Want to know about Our Email Marketing Package</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="six"
+                                                aria-label="Checkbox for following text input">
+                                            <label for="six">Others</label>
+                                        </li>
+                                    </ul>
                                 </div>
 
                                 <div class="form-group">
@@ -151,6 +207,9 @@
         </section>
     </section>
 
+    <section class="container spacer">
+        <img class="infgraphic-image-full" src="img/business.jpeg" alt="">
+    </section>
     <section class="spacer container">
         <center>
             <h1 class="heading">
@@ -204,48 +263,187 @@
             </div>
         </div>
     </section>
+
+
+
+    <section class="container">
+
+
+
+
+    </section>
+
     <section class="container spacer">
-        <div class="row align-items-center">
+        <div class="row">
             <div class="col-md-6">
+                <div class="swiper-container gallery-top-main-image bg-gradient shadow-2">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 200px; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <h4 class="text-white mt-4">This is your heading</h4>
+                            <p class="text-white">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit
+                                dolor
+                                ratione
+                                eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
+                                dolorum
+                                perferendis laboriosam. perferendis laboriosam.
+                                perferendis laboriosam.
+                            </p>
+                            <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
+                        <div class="swiper-slide text-white">
+                            <h4>Add your content here..</h4>
+                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, quis!</p>
+                        </div>
 
-                <div class="bg-gradient shadow-2 p30">
-
-                    <h4 class="text-white mt-4">This is your heading</h4>
-                    <p class="text-white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nisi omnis earum sit dolor
-                        ratione
-                        eos delectus, ullam quae esse molestias officia consectetur aliquid maxime, sed atque
-                        dolorum
-                        perferendis laboriosam. perferendis laboriosam.
-                        perferendis laboriosam.
-                    </p>
-                    <img style="width: 50%; margin:auto" src="img/interior-desighn.jpeg" alt="">
+                    </div>
+                    <!-- Add Arrows -->
+                    <!-- <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div> -->
                 </div>
 
             </div>
             <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                <div class="swiper-container gallery-thumbs-list">
 
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <ul class="list-group swiper-wrapper">
+                        <li class="list-group-item swiper-slide">Cras justo odio</li>
+                        <li class="list-group-item swiper-slide">Cras justo odio</li>
+                        <li class="list-group-item swiper-slide">Cras justo odio</li>
 
-                </ul>
+                        <li class="list-group-item swiper-slide">Dapibus ac facilisis in</li>
+                        <li class="list-group-item swiper-slide">Morbi leo risus</li>
+                        <li class="list-group-item swiper-slide">Porta ac consectetur ac</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
+                        <li class="list-group-item swiper-slide">Vestibulum at eros</li>
+
+                    </ul>
+
+                </div>
+
+
             </div>
         </div>
     </section>
     <section class="container spacer">
         <div class="cta-box bg-gradient shadow-1 text-center p30">
             <h2 class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-            <button class="btn btn-lg btn-light mt-4">Request for Proposal</button>
+            <button class="btn btn-lg btn-light mt-4" data-toggle="modal" data-target="#exampleModal">Request for
+                Proposal</button>
         </div>
     </section>
 
     <footer></footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog  modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <center>
+                        <h2 class="bold">Get Quote</h2>
+                        <h5>We are a Design and Digital Marketing Agency in India</h5>
+                        <p class="read theme-color">
+                            Providing design, development and digital solutions for over 400+ clients across the globe.
+                        </p>
+                    </center>
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter your Email">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Mobile Number">
+                        </div>
+                        <div class="form-group">
+
+                            <select class="form-control" name="" id="">
+                                <option value="">Select A Service</option>
+                                <option value="">SEO</option>
+                                <option value="">SMM</option>
+                                <option value="">SEM</option>
+                                <option value="">Marketing Design</option>
+                                <option value="">Content Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="" id="" rows="4" placeholder="Message"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-comp">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jQuery.min.js"></script>
     <script src="js/splitting.js"></script>
@@ -253,31 +451,7 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controller.js"></script>
-    <script>
-        fetch("header.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("header").innerHTML = data;
-            });
 
-        fetch("./nav.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("#nav").innerHTML = data;
-            });
-
-        fetch("./footer.html")
-            .then(response => {
-                return response.text();
-            })
-            .then(data => {
-                document.querySelector("footer").innerHTML = data;
-            });
-    </script>
 
 </body>
 
